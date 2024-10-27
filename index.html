@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>World Clock</h1>
+      <h1>World Clock</h1>
     </header>
-    <main>
-
+    <main class="clocks-card">
+      <select class="dropdown" name="world-clocks" id="world-clocks">
+        <option value="">Choose city</option>
+        <option value="london">London</option>
+        <option value="newyork">New York</option>
+        <option value="auckland">Auckland</option>
+      </select>
+      <div class="all-cities">
+        <div class="city-container">
+          <div class="city-date">
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="date">October 27th, 2024</div>
+          </div>
+          <div class="time">2:47:15 <span class="ap-pm">AM</span></div>
+        </div>
+        <div class="city-container">
+          <div class="city-date">
+            <h2>Sydney 🇦🇺</h2>
+            <div class="date">October 27th, 2024</div>
+          </div>
+          <div class="time">2:47:15 AM</div>
+        </div>
+        <div class="city-container">
+            <div class="city-date">
+              <h2>Tokyo 🇯🇵</h2>
+              <div class="date">October 27th, 2024</div>
+            </div>
+            <div class="time">2:47:15 AM</div>
+          </div>
+          <div class="city-container">
+            <div class="city-date">
+              <h2>Paris 🇫🇷</h2>
+              <div class="date">October 27th, 2024</div>
+            </div>
+            <div class="time">2:47:15 AM</div>
+          </div>
+      </div>
     </main>
-<footer>
-    <p>
-      This project was coded by
-      <a href="https://github.com/jsavkovic/" target="_blank">Jasmina</a>, is open-sourced on  
-      <a href="https://github.com/jsavkovic/world-clock-project" target="_blank">GitHub</a> and hosted on 
-      <a href="https://jasminas-world-clock.netlify.app/" target="_blank">Netlify</a>
-    </p>
-  </footer>
+    <footer class="footer">
+      <p>
+        This project was coded by
+        <a href="https://github.com/jsavkovic/" target="_blank">Jasmina</a>, is
+        open-sourced on
+        <a
+          href="https://github.com/jsavkovic/world-clock-project"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://jasminas-world-clock.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </p>
+    </footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
