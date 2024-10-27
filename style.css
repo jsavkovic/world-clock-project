@@ -1,0 +1,77 @@
+body {
+  background-color: #f9f7fe;
+  font-family: sans-serif;
+  color: #270f43;
+}
+
+h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.75rem;
+}
+
+.container {
+  max-width: 30rem;
+  background-color: white;
+  align-content: center;
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  letter-spacing: 0.03rem;
+  font-weight: bolder;
+  margin-top: 2.2rem;
+  margin-bottom: 3.5rem;
+}
+
+.dropdown {
+  width: 100%;
+  height: 2.8rem;
+  border-radius: 0.3rem;
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  color: rgb(95, 92, 92);
+}
+
+/* .clocks-card {
+  display: flex;
+  flex-direction: column;
+} */
+
+.clocks-container {
+  margin-top: 0.9rem;
+}
+
+.city-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed lightgrey;
+  padding: 1.4rem 0;
+}
+
+.date {
+  color: rgb(183, 182, 182);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.time {
+  font-size: 2.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-pm {
+  font-size: 0.85rem;
+  padding-left: 0.8rem;
+}
+
+.footer {
+  text-align: center;
+}
