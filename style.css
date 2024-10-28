@@ -13,6 +13,11 @@ a {
   color: rgb(255, 148, 219);
 }
 
+.home-link {
+  color: rgb(255, 148, 219);
+  text-decoration: none;
+}
+
 .container {
   max-width: 30rem;
   background-color: white;

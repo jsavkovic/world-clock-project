@@ -87,8 +87,8 @@ function updateCity (event) {
             'h:mm:ss [<small>]A[</small>]'
           )}</div>
         </div>
+        <p><a class="home-link" href="/"> All Cities </a></p>
         `
-    //   citiesEl.innerHTML = newCityEl
   }
 
   updateSelectedCityTime()
