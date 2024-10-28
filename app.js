@@ -1,3 +1,5 @@
+let intervalId
+
 function updateTime () {
   // LOS ANGELES
   let losAngelesEl = document.querySelector('#los-angeles')
@@ -66,10 +68,16 @@ function updateCity (event) {
     cityTimeZone = moment.tz.guess()
   }
   let cityName = cityTimeZone.replace('_', ' ').split('/')[1]
-  let cityTime = moment().tz(cityTimeZone)
+
+  if (intervalId) {
+    clearInterval(intervalId)
+  }
+
   let citiesEl = document.querySelector('#city')
 
-  citiesEl.innerHTML = `
+  function updateSelectedCityTime () {
+    let cityTime = moment().tz(cityTimeZone)
+    citiesEl.innerHTML = `
    <div class="city">
           <div>
             <h2>${cityName}</h2>
@@ -80,7 +88,12 @@ function updateCity (event) {
           )}</div>
         </div>
         `
-  //   citiesEl.innerHTML = newCityEl
+    //   citiesEl.innerHTML = newCityEl
+  }
+
+  updateSelectedCityTime()
+
+  intervalId = setInterval(updateSelectedCityTime, 1000)
 }
 
 updateTime()
